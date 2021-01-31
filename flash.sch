@@ -1,0 +1,311 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "BMC and Host Flash"
+Date "2021-01-30"
+Rev "1.0"
+Comp "Evan Lojewski"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3700 2850 0    50   Input ~ 0
+~BMC_SPI_CS~
+Text HLabel 4300 2950 0    50   BiDi ~ 0
+BMC_SPI_D2
+Text HLabel 4350 3050 0    50   BiDi ~ 0
+BMC_SPI_D3
+Text HLabel 5550 2850 2    50   BiDi ~ 0
+BMC_SPI_D1
+Text HLabel 5550 2950 2    50   Input ~ 0
+~BMC_SPI_RESET~
+$Comp
+L power:+3.3V #PWR?
+U 1 1 604829EF
+P 5150 2100
+AR Path="/604829EF" Ref="#PWR?"  Part="1" 
+AR Path="/602D918A/604829EF" Ref="#PWR?"  Part="1" 
+AR Path="/604853B7/604829EF" Ref="#PWR?"  Part="1" 
+AR Path="/602098E5/604829EF" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 5150 1950 50  0001 C CNN
+F 1 "+3.3V" H 5165 2273 50  0000 C CNN
+F 2 "" H 5150 2100 50  0001 C CNN
+F 3 "" H 5150 2100 50  0001 C CNN
+	1    5150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604829F0
+P 5150 3450
+AR Path="/604829F0" Ref="#PWR?"  Part="1" 
+AR Path="/602D918A/604829F0" Ref="#PWR?"  Part="1" 
+AR Path="/604853B7/604829F0" Ref="#PWR?"  Part="1" 
+AR Path="/602098E5/604829F0" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 5150 3200 50  0001 C CNN
+F 1 "GND" H 5155 3277 50  0000 C CNN
+F 2 "" H 5150 3450 50  0001 C CNN
+F 3 "" H 5150 3450 50  0001 C CNN
+	1    5150 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2850 5550 2850
+Wire Wire Line
+	5450 2950 5550 2950
+Wire Wire Line
+	4450 3050 4350 3050
+Wire Wire Line
+	4350 2750 4450 2750
+Wire Wire Line
+	4450 2650 4350 2650
+$Comp
+L Device:C C?
+U 1 1 604829F1
+P 5600 2350
+AR Path="/602D918A/604829F1" Ref="C?"  Part="1" 
+AR Path="/604853B7/604829F1" Ref="C?"  Part="1" 
+AR Path="/602098E5/604829F1" Ref="C2"  Part="1" 
+F 0 "C2" H 5715 2396 50  0000 L CNN
+F 1 "100nF" H 5715 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5638 2200 50  0001 C CNN
+F 3 "~" H 5600 2350 50  0001 C CNN
+	1    5600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 604D0D9C
+P 3750 2450
+AR Path="/604D0D9C" Ref="R?"  Part="1" 
+AR Path="/6040FD5C/604D0D9C" Ref="R?"  Part="1" 
+AR Path="/602D918A/604D0D9C" Ref="R?"  Part="1" 
+AR Path="/604853B7/604D0D9C" Ref="R?"  Part="1" 
+AR Path="/602098E5/604D0D9C" Ref="R9"  Part="1" 
+F 0 "R9" H 3820 2496 50  0000 L CNN
+F 1 "DNP" H 3820 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3680 2450 50  0001 C CNN
+F 3 "~" H 3750 2450 50  0001 C CNN
+	1    3750 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2600 3750 2850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 604D3993
+P 3750 2250
+AR Path="/602D918A/604D3993" Ref="#PWR?"  Part="1" 
+AR Path="/604853B7/604D3993" Ref="#PWR?"  Part="1" 
+AR Path="/602098E5/604D3993" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 3750 2100 50  0001 C CNN
+F 1 "+3.3V" H 3765 2423 50  0000 C CNN
+F 2 "" H 3750 2250 50  0001 C CNN
+F 3 "" H 3750 2250 50  0001 C CNN
+	1    3750 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2300 3750 2250
+Wire Wire Line
+	5150 2100 5150 2200
+Wire Wire Line
+	5600 2200 5150 2200
+Connection ~ 5150 2200
+Wire Wire Line
+	5150 2200 5150 2450
+$Comp
+L power:GND #PWR?
+U 1 1 604D803B
+P 5600 2550
+AR Path="/602D918A/604D803B" Ref="#PWR?"  Part="1" 
+AR Path="/604853B7/604D803B" Ref="#PWR?"  Part="1" 
+AR Path="/602098E5/604D803B" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 5600 2300 50  0001 C CNN
+F 1 "GND" H 5605 2377 50  0000 C CNN
+F 2 "" H 5600 2550 50  0001 C CNN
+F 3 "" H 5600 2550 50  0001 C CNN
+	1    5600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2550 5600 2500
+$Comp
+L parts:MT25QXXXXXXX8EXX-XXXX U?
+U 1 1 601ECB45
+P 4900 5100
+AR Path="/601ECB45" Ref="U?"  Part="1" 
+AR Path="/602D918A/601ECB45" Ref="U?"  Part="1" 
+AR Path="/604853B7/601ECB45" Ref="U?"  Part="1" 
+AR Path="/602098E5/601ECB45" Ref="U1"  Part="1" 
+F 0 "U1" H 4900 5681 50  0000 C CNN
+F 1 "MT25QXXXXXXX8EXX-XXXX" H 4900 5590 50  0000 C CNN
+F 2 "parts:SOIC-16W_7.5x10.3mm_P1.27mm" H 4900 4500 50  0001 C CNN
+F 3 "http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf" H 4900 5100 50  0001 C CNN
+	1    4900 5100
+	1    0    0    -1  
+$EndComp
+Text HLabel 4300 5000 0    50   Input ~ 0
+HOST_SPI_CLK
+Text HLabel 3350 5100 0    50   Input ~ 0
+~HOST_SPI_CS~
+Text HLabel 4300 4900 0    50   BiDi ~ 0
+HOST_SPI_D0
+Text HLabel 4300 5200 0    50   BiDi ~ 0
+HOST_SPI_D2
+Text HLabel 4300 5300 0    50   BiDi ~ 0
+HOST_SPI_D3
+Text HLabel 5500 5100 2    50   BiDi ~ 0
+HOST_SPI_D1
+Text HLabel 5500 5200 2    50   Input ~ 0
+~HOST_SPI_RESET~
+$Comp
+L power:GND #PWR?
+U 1 1 601ECB58
+P 5100 5700
+AR Path="/601ECB58" Ref="#PWR?"  Part="1" 
+AR Path="/602D918A/601ECB58" Ref="#PWR?"  Part="1" 
+AR Path="/604853B7/601ECB58" Ref="#PWR?"  Part="1" 
+AR Path="/602098E5/601ECB58" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 5100 5450 50  0001 C CNN
+F 1 "GND" H 5105 5527 50  0000 C CNN
+F 2 "" H 5100 5700 50  0001 C CNN
+F 3 "" H 5100 5700 50  0001 C CNN
+	1    5100 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5100 5500 5100
+Wire Wire Line
+	5400 5200 5500 5200
+Wire Wire Line
+	4400 5300 4300 5300
+Wire Wire Line
+	4300 5200 4400 5200
+Wire Wire Line
+	4300 5000 4400 5000
+Wire Wire Line
+	4400 4900 4300 4900
+Text HLabel 4350 2750 0    50   Input ~ 0
+BMC_SPI_CLK
+Text HLabel 4350 2650 0    50   BiDi ~ 0
+BMC_SPI_D0
+Connection ~ 3750 2850
+Wire Wire Line
+	3750 2850 3700 2850
+Wire Wire Line
+	3750 2850 4450 2850
+$Comp
+L Device:R R?
+U 1 1 601FC52F
+P 3500 4800
+AR Path="/601FC52F" Ref="R?"  Part="1" 
+AR Path="/6040FD5C/601FC52F" Ref="R?"  Part="1" 
+AR Path="/602D918A/601FC52F" Ref="R?"  Part="1" 
+AR Path="/604853B7/601FC52F" Ref="R?"  Part="1" 
+AR Path="/602098E5/601FC52F" Ref="R8"  Part="1" 
+F 0 "R8" H 3570 4846 50  0000 L CNN
+F 1 "DNP" H 3570 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3430 4800 50  0001 C CNN
+F 3 "~" H 3500 4800 50  0001 C CNN
+	1    3500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 601FC535
+P 3500 4600
+AR Path="/602D918A/601FC535" Ref="#PWR?"  Part="1" 
+AR Path="/604853B7/601FC535" Ref="#PWR?"  Part="1" 
+AR Path="/602098E5/601FC535" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 3500 4450 50  0001 C CNN
+F 1 "+3.3V" H 3515 4773 50  0000 C CNN
+F 2 "" H 3500 4600 50  0001 C CNN
+F 3 "" H 3500 4600 50  0001 C CNN
+	1    3500 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4650 3500 4600
+Wire Wire Line
+	3350 5100 3500 5100
+Wire Wire Line
+	3500 4950 3500 5100
+Connection ~ 3500 5100
+Wire Wire Line
+	3500 5100 4400 5100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 602032CB
+P 5100 4350
+AR Path="/602032CB" Ref="#PWR?"  Part="1" 
+AR Path="/602D918A/602032CB" Ref="#PWR?"  Part="1" 
+AR Path="/604853B7/602032CB" Ref="#PWR?"  Part="1" 
+AR Path="/602098E5/602032CB" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 5100 4200 50  0001 C CNN
+F 1 "+3.3V" H 5115 4523 50  0000 C CNN
+F 2 "" H 5100 4350 50  0001 C CNN
+F 3 "" H 5100 4350 50  0001 C CNN
+	1    5100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 602032D1
+P 5550 4600
+AR Path="/602D918A/602032D1" Ref="C?"  Part="1" 
+AR Path="/604853B7/602032D1" Ref="C?"  Part="1" 
+AR Path="/602098E5/602032D1" Ref="C1"  Part="1" 
+F 0 "C1" H 5665 4646 50  0000 L CNN
+F 1 "100nF" H 5665 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5588 4450 50  0001 C CNN
+F 3 "~" H 5550 4600 50  0001 C CNN
+	1    5550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4350 5100 4450
+Wire Wire Line
+	5550 4450 5100 4450
+Connection ~ 5100 4450
+Wire Wire Line
+	5100 4450 5100 4700
+$Comp
+L power:GND #PWR0115
+U 1 1 60203CDB
+P 5550 4850
+F 0 "#PWR0115" H 5550 4600 50  0001 C CNN
+F 1 "GND" H 5555 4677 50  0000 C CNN
+F 2 "" H 5550 4850 50  0001 C CNN
+F 3 "" H 5550 4850 50  0001 C CNN
+	1    5550 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4850 5550 4750
+Wire Wire Line
+	4450 2950 4300 2950
+$Comp
+L parts:MT25QXXXXXXX8EXX-XXXX U?
+U 1 1 604829EE
+P 4950 2850
+AR Path="/604829EE" Ref="U?"  Part="1" 
+AR Path="/602D918A/604829EE" Ref="U?"  Part="1" 
+AR Path="/604853B7/604829EE" Ref="U?"  Part="1" 
+AR Path="/602098E5/604829EE" Ref="U2"  Part="1" 
+F 0 "U2" H 4950 3431 50  0000 C CNN
+F 1 "MT25QXXXXXXX8EXX-XXXX" H 4950 3340 50  0000 C CNN
+F 2 "parts:SOIC-16W_7.5x10.3mm_P1.27mm" H 4950 2250 50  0001 C CNN
+F 3 "http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf" H 4950 2850 50  0001 C CNN
+	1    4950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3450 5150 3300
+Wire Wire Line
+	5100 5700 5100 5550
+$EndSCHEMATC

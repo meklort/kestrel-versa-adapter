@@ -1,0 +1,308 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 2 4
+Title "LPC Connector"
+Date "2021-01-30"
+Rev "1.0"
+Comp "Evan Lojewski"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 60414330
+P 4250 3500
+AR Path="/60414330" Ref="#PWR?"  Part="1" 
+AR Path="/6040FD5C/60414330" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 4250 3250 50  0001 C CNN
+F 1 "GND" H 4255 3327 50  0000 C CNN
+F 2 "" H 4250 3500 50  0001 C CNN
+F 3 "" H 4250 3500 50  0001 C CNN
+	1    4250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3300 4250 3300
+Wire Wire Line
+	4250 3300 4250 3500
+$Comp
+L power:GND #PWR?
+U 1 1 60414338
+P 4950 3550
+AR Path="/60414338" Ref="#PWR?"  Part="1" 
+AR Path="/6040FD5C/60414338" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 4950 3300 50  0001 C CNN
+F 1 "GND" H 4955 3377 50  0000 C CNN
+F 2 "" H 4950 3550 50  0001 C CNN
+F 3 "" H 4950 3550 50  0001 C CNN
+	1    4950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3550 4950 3000
+Wire Wire Line
+	4950 3000 4850 3000
+Wire Wire Line
+	4850 2500 4950 2500
+Wire Wire Line
+	4950 2500 4950 3000
+Connection ~ 4950 3000
+NoConn ~ 4850 2600
+Text Label 4250 2900 2    50   ~ 0
+3v3
+Text Label 4250 3200 2    50   ~ 0
+3v3AUX
+$Comp
+L Device:R R?
+U 1 1 6041434D
+P 3550 2350
+AR Path="/6041434D" Ref="R?"  Part="1" 
+AR Path="/6040FD5C/6041434D" Ref="R5"  Part="1" 
+F 0 "R5" H 3620 2396 50  0000 L CNN
+F 1 "15K" H 3620 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3480 2350 50  0001 C CNN
+F 3 "~" H 3550 2350 50  0001 C CNN
+	1    3550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60414353
+P 3300 2350
+AR Path="/60414353" Ref="R?"  Part="1" 
+AR Path="/6040FD5C/60414353" Ref="R4"  Part="1" 
+F 0 "R4" H 3370 2396 50  0000 L CNN
+F 1 "15K" H 3370 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3230 2350 50  0001 C CNN
+F 3 "~" H 3300 2350 50  0001 C CNN
+	1    3300 2350
+	1    0    0    -1  
+$EndComp
+Text Label 4300 2200 0    50   ~ 0
+TPM_CONNECTOR
+Wire Wire Line
+	4850 3300 5000 3300
+Wire Wire Line
+	4850 2800 5200 2800
+$Comp
+L Device:R R?
+U 1 1 60414370
+P 3050 2350
+AR Path="/60414370" Ref="R?"  Part="1" 
+AR Path="/6040FD5C/60414370" Ref="R3"  Part="1" 
+F 0 "R3" H 3120 2396 50  0000 L CNN
+F 1 "15K" H 3120 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2980 2350 50  0001 C CNN
+F 3 "~" H 3050 2350 50  0001 C CNN
+	1    3050 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4850 2700
+$Comp
+L Device:R R?
+U 1 1 6041AAA3
+P 2800 2350
+AR Path="/6041AAA3" Ref="R?"  Part="1" 
+AR Path="/6040FD5C/6041AAA3" Ref="R2"  Part="1" 
+F 0 "R2" H 2870 2396 50  0000 L CNN
+F 1 "15K" H 2870 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2730 2350 50  0001 C CNN
+F 3 "~" H 2800 2350 50  0001 C CNN
+	1    2800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6041AAA9
+P 5450 2400
+AR Path="/6041AAA9" Ref="R?"  Part="1" 
+AR Path="/6040FD5C/6041AAA9" Ref="R7"  Part="1" 
+F 0 "R7" H 5520 2446 50  0000 L CNN
+F 1 "15K" H 5520 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5380 2400 50  0001 C CNN
+F 3 "~" H 5450 2400 50  0001 C CNN
+	1    5450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2550 5450 2900
+Wire Wire Line
+	5200 2550 5200 2800
+$Comp
+L Device:R R?
+U 1 1 6041AAB4
+P 5200 2400
+AR Path="/6041AAB4" Ref="R?"  Part="1" 
+AR Path="/6040FD5C/6041AAB4" Ref="R6"  Part="1" 
+F 0 "R6" H 5270 2446 50  0000 L CNN
+F 1 "15K" H 5270 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5130 2400 50  0001 C CNN
+F 3 "~" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	1    0    0    -1  
+$EndComp
+Text HLabel 5650 2800 2    50   BiDi ~ 0
+LPC_AD2
+Text HLabel 5650 2900 2    50   BiDi ~ 0
+LPC_AD1
+Wire Wire Line
+	4850 2900 5450 2900
+Connection ~ 5450 2900
+Wire Wire Line
+	5450 2900 5650 2900
+Wire Wire Line
+	5650 2800 5200 2800
+Connection ~ 5200 2800
+Text HLabel 2650 2800 0    50   BiDi ~ 0
+LPC_AD3
+Text HLabel 2650 2700 0    50   Output ~ 0
+~LPC_RESET~
+Text HLabel 2650 2600 0    50   Output ~ 0
+~LPC_FRAME~
+Text HLabel 4250 2500 0    50   Output ~ 0
+LPC_CLK
+Wire Wire Line
+	4350 2500 4250 2500
+Text HLabel 2650 3000 0    50   BiDi ~ 0
+LPC_AD0
+Wire Wire Line
+	2650 2600 3550 2600
+Wire Wire Line
+	3550 2500 3550 2600
+Connection ~ 3550 2600
+Wire Wire Line
+	3550 2600 4350 2600
+Wire Wire Line
+	3300 2700 3300 2500
+Wire Wire Line
+	3300 2700 4350 2700
+Wire Wire Line
+	3300 2700 2650 2700
+Connection ~ 3300 2700
+Wire Wire Line
+	2650 2800 3050 2800
+Wire Wire Line
+	3050 2800 3050 2500
+Wire Wire Line
+	3050 2800 4350 2800
+Connection ~ 3050 2800
+Wire Wire Line
+	2650 3000 2800 3000
+Wire Wire Line
+	2800 3000 2800 2500
+Wire Wire Line
+	2800 3000 4350 3000
+Connection ~ 2800 3000
+Wire Wire Line
+	3550 2200 3550 2150
+Wire Wire Line
+	3550 2150 3300 2150
+Wire Wire Line
+	3200 2150 3200 2050
+Wire Wire Line
+	3300 2200 3300 2150
+Connection ~ 3300 2150
+Wire Wire Line
+	3300 2150 3200 2150
+Wire Wire Line
+	3050 2200 3050 2150
+Wire Wire Line
+	3050 2150 3200 2150
+Connection ~ 3200 2150
+Wire Wire Line
+	2800 2200 2800 2150
+Wire Wire Line
+	2800 2150 3050 2150
+Connection ~ 3050 2150
+Wire Wire Line
+	5300 2100 5300 2200
+Wire Wire Line
+	5300 2200 5450 2200
+Wire Wire Line
+	5450 2200 5450 2250
+Wire Wire Line
+	5200 2250 5200 2200
+Wire Wire Line
+	5200 2200 5300 2200
+Connection ~ 5300 2200
+Text HLabel 5000 3300 2    50   Input ~ 0
+~LPC_CLKRUN~
+Wire Wire Line
+	4350 3200 4300 3200
+Wire Wire Line
+	4300 3200 4300 2000
+NoConn ~ 4350 2900
+Text HLabel 5000 3100 2    50   BiDi ~ 0
+LPC_SDA
+Text HLabel 4250 3100 0    50   Input ~ 0
+LPC_SCL
+Wire Wire Line
+	5000 3100 4850 3100
+Wire Wire Line
+	4350 3100 4250 3100
+Text HLabel 5000 3200 2    50   BiDi ~ 0
+~LPC_SERIRQ~
+Wire Wire Line
+	5000 3200 4850 3200
+Text HLabel 5000 3400 2    50   Input ~ 0
+TPM_GPIO0
+Text Notes 5550 3450 0    50   ~ 0
+Pin 20: IRQ To BMC (unused)\n
+Wire Wire Line
+	5000 3400 4850 3400
+$Comp
+L power:+3.3VP #PWR0105
+U 1 1 603EC583
+P 4300 2000
+F 0 "#PWR0105" H 4450 1950 50  0001 C CNN
+F 1 "+3.3VP" H 4315 2173 50  0000 C CNN
+F 2 "" H 4300 2000 50  0001 C CNN
+F 3 "" H 4300 2000 50  0001 C CNN
+	1    4300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR0106
+U 1 1 603F0035
+P 3200 2050
+F 0 "#PWR0106" H 3350 2000 50  0001 C CNN
+F 1 "+3.3VP" H 3215 2223 50  0000 C CNN
+F 2 "" H 3200 2050 50  0001 C CNN
+F 3 "" H 3200 2050 50  0001 C CNN
+	1    3200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR0107
+U 1 1 603F0459
+P 5300 2100
+F 0 "#PWR0107" H 5450 2050 50  0001 C CNN
+F 1 "+3.3VP" H 5315 2273 50  0000 C CNN
+F 2 "" H 5300 2100 50  0001 C CNN
+F 3 "" H 5300 2100 50  0001 C CNN
+	1    5300 2100
+	1    0    0    -1  
+$EndComp
+Text HLabel 4150 3400 0    50   BiDi ~ 0
+~WINDOW_OPEN~
+Wire Wire Line
+	4350 3400 4150 3400
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J?
+U 1 1 60414377
+P 4550 2900
+AR Path="/60414377" Ref="J?"  Part="1" 
+AR Path="/6040FD5C/60414377" Ref="J5"  Part="1" 
+F 0 "J5" H 4600 3517 50  0000 C CNN
+F 1 "SBH11-PBPC-D10-ST-BK" H 4600 3426 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 4550 2900 50  0001 C CNN
+F 3 "~" H 4550 2900 50  0001 C CNN
+	1    4550 2900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
