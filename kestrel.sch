@@ -398,5 +398,5 @@ Wire Wire Line
 	7500 5300 7450 5300
 NoConn ~ 4350 6550
 Text Notes 2100 5950 0    50   ~ 0
-Connector (5pin): 0050579405\nCOnnector (3pin): 0050579405\nPer-crimped cables: 0797580003\n
+Connector (5pin): 0050579405\nConnector (3pin): 0050579403\nPer-crimped cables: 0797580003\n
 $EndSCHEMATC
