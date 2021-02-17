@@ -178,7 +178,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 2000 5700 2000
 Text HLabel 5700 1700 2    50   Output ~ 0
-~HOST_SPI_CS~
+HOST_SPI_CLK
 Wire Wire Line
 	5100 1600 5000 1600
 Wire Wire Line
@@ -258,13 +258,13 @@ Wire Wire Line
 Wire Wire Line
 	5700 2100 5600 2100
 Text HLabel 5000 3300 0    50   Output ~ 0
-BMC_SPI_CLK
+~BMC_SPI_CS~
 Text HLabel 5000 3100 0    50   BiDi ~ 0
 BMC_SPI_D0
 Text HLabel 5000 3400 0    50   BiDi ~ 0
 BMC_SPI_D1
 Text HLabel 5000 3000 0    50   Output ~ 0
-~BMC_SPI_CS~
+BMC_SPI_CLK
 Text HLabel 5000 2900 0    50   BiDi ~ 0
 BMC_SPI_D3
 NoConn ~ 1800 2550
@@ -297,7 +297,7 @@ HOST_SPI_D3
 Text HLabel 5000 2100 0    50   BiDi ~ 0
 HOST_SPI_D1
 Text HLabel 5000 2000 0    50   Output ~ 0
-HOST_SPI_CLK
+~HOST_SPI_CS~
 Text HLabel 5000 3200 0    50   BiDi ~ 0
 BMC_SPI_D2
 NoConn ~ 2300 1550
