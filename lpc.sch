@@ -146,17 +146,13 @@ F 3 "~" H 5200 2400 50  0001 C CNN
 	1    5200 2400
 	1    0    0    -1  
 $EndComp
-Text HLabel 5650 2800 2    50   BiDi ~ 0
+Text HLabel 5850 2800 2    50   BiDi ~ 0
 LPC_AD2
-Text HLabel 5650 2900 2    50   BiDi ~ 0
+Text HLabel 5850 2900 2    50   BiDi ~ 0
 LPC_AD1
 Wire Wire Line
 	4850 2900 5450 2900
 Connection ~ 5450 2900
-Wire Wire Line
-	5450 2900 5650 2900
-Wire Wire Line
-	5650 2800 5200 2800
 Connection ~ 5200 2800
 Text HLabel 2650 2800 0    50   BiDi ~ 0
 LPC_AD3
@@ -245,10 +241,8 @@ Wire Wire Line
 	5000 3100 4850 3100
 Wire Wire Line
 	4350 3100 4250 3100
-Text HLabel 5000 3200 2    50   BiDi ~ 0
+Text HLabel 5850 3200 2    50   BiDi ~ 0
 ~LPC_SERIRQ~
-Wire Wire Line
-	5000 3200 4850 3200
 Text HLabel 5000 3400 2    50   Input ~ 0
 TPM_GPIO0
 Text Notes 5550 3450 0    50   ~ 0
@@ -305,4 +299,33 @@ F 3 "~" H 4550 2900 50  0001 C CNN
 	1    4550 2900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 6056FD59
+P 5700 2400
+AR Path="/6056FD59" Ref="R?"  Part="1" 
+AR Path="/6040FD5C/6056FD59" Ref="R12"  Part="1" 
+F 0 "R12" H 5770 2446 50  0000 L CNN
+F 1 "15K" H 5770 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5630 2400 50  0001 C CNN
+F 3 "~" H 5700 2400 50  0001 C CNN
+	1    5700 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2200 5700 2200
+Wire Wire Line
+	5700 2200 5700 2250
+Connection ~ 5450 2200
+Wire Wire Line
+	5200 2800 5850 2800
+Wire Wire Line
+	5450 2900 5850 2900
+Wire Wire Line
+	4850 3200 5700 3200
+Wire Wire Line
+	5700 2550 5700 3200
+Connection ~ 5700 3200
+Wire Wire Line
+	5700 3200 5850 3200
 $EndSCHEMATC

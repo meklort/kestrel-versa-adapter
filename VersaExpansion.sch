@@ -270,7 +270,6 @@ BMC_SPI_D3
 NoConn ~ 1800 2550
 NoConn ~ 1800 2650
 NoConn ~ 1450 3150
-NoConn ~ 1450 3050
 NoConn ~ 1450 2950
 Wire Wire Line
 	2600 3350 2600 3450
@@ -350,8 +349,6 @@ Connection ~ 1750 2750
 Wire Wire Line
 	1450 3150 1800 3150
 Wire Wire Line
-	1450 3050 1800 3050
-Wire Wire Line
 	1450 2950 1800 2950
 Wire Wire Line
 	1750 2850 1750 3250
@@ -372,7 +369,7 @@ Text HLabel 5700 2100 2    50   BiDi ~ 0
 LPC_AD1
 Text HLabel 5700 1800 2    50   BiDi ~ 0
 HOST_SPI_D0
-Text HLabel 5000 1600 0    50   Input ~ 0
+Text HLabel 1700 1750 0    50   Input ~ 0
 LPC_CLK
 Wire Wire Line
 	5100 1900 5000 1900
@@ -398,25 +395,12 @@ Wire Wire Line
 	2600 3450 2600 3550
 Text HLabel 2600 1650 2    50   Input ~ 0
 ~PWR_BTN~
-Text HLabel 1700 1750 0    50   Output ~ 0
+Text HLabel 1700 1850 0    50   Output ~ 0
 PWD_LED
 Wire Wire Line
 	2300 1650 2600 1650
 Wire Wire Line
-	1700 1750 1800 1750
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even X?
-U 1 1 60315130
-P 5300 2400
-AR Path="/60315130" Ref="X?"  Part="1" 
-AR Path="/602D8BC4/60315130" Ref="X4"  Part="1" 
-F 0 "X4" H 5350 3517 50  0000 C CNN
-F 1 "PPPC202LFBN-RC" H 5350 3426 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 5300 2400 50  0001 C CNN
-F 3 "~" H 5300 2400 50  0001 C CNN
-	1    5300 2400
-	1    0    0    -1  
-$EndComp
+	1700 1850 1800 1850
 NoConn ~ 5600 2400
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even X?
@@ -432,11 +416,29 @@ F 3 "~" H 2000 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1800 1650
-NoConn ~ 1800 1850
 NoConn ~ 1800 1950
 NoConn ~ 1800 2050
 NoConn ~ 1800 2150
 NoConn ~ 1800 2250
 NoConn ~ 1800 2350
 NoConn ~ 1800 2450
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even X?
+U 1 1 60315130
+P 5300 2400
+AR Path="/60315130" Ref="X?"  Part="1" 
+AR Path="/602D8BC4/60315130" Ref="X4"  Part="1" 
+F 0 "X4" H 5350 3517 50  0000 C CNN
+F 1 "PPPC202LFBN-RC" H 5350 3426 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 5300 2400 50  0001 C CNN
+F 3 "~" H 5300 2400 50  0001 C CNN
+	1    5300 2400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5000 1600
+Wire Wire Line
+	1800 1750 1700 1750
+NoConn ~ 1450 3050
+Wire Wire Line
+	1450 3050 1800 3050
 $EndSCHEMATC
